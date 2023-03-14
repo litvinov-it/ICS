@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>ICS</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
                 <div class="logo">
-                    <a href="##" class="logo__link">
+                    <a href="./index.html" class="logo__link">
                         <img src="./img/logo.png" alt="logo" class="logo__img">
                     </a>
                 </div>
-                <ul class="nav_list">
-                    <li class="nav__item"><a href="" class="nav__link">Главная</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Услуги</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">О компании</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                <div class="nav_list-wrap">
+									<ul class="nav_list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link active">Главная</a></li>
+                    <li class="nav__item"><a href="./services.html" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">О компании</a></li>
+                    <li class="nav__item"><a href="./contacts.html" class="nav__link">Контакты</a></li>
                 </ul>
+								</div>
                 <div class="header__call">
                     <a href="tel:+73832003446" class="header__tel">+7 (383) 200-34-46</a>
-                    <button type="button" class="btn btn-primary btn-sm">Заказать звонок</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
                 </div>
+								<div class="header__burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
             </nav>
         </div>
     </header>
@@ -38,32 +45,182 @@
         <img src="./img/main_background.png" alt="main__background" class="main__background">
     </main>
 
-    <section class="special container">
-        <h2 class="title">Специальные предложения</h2>
-        <div class="special__list">
-            <a href="##" class="special__link special__item">
-                <h3 class="special__title">Подбор</h3>
-                <img src="./img/special_1.png" alt="special_1" class="special__img">
-            </a>
-            <div class="special__item">
-                <h3 class="special__title">Продажа и пусконаладка серверов</h3>
-                <img src="./img/special_1.png" alt="special_1" class="special__img">
-            </div>
-            <div class="special__item">
-                <h3 class="special__title">Обслуживание компьютерной техники для юридических лиц</h3>
-                <img src="./img/special_1.png" alt="special_1" class="special__img">
-            </div>
-            <div class="special__item">
-                <h3 class="special__title">Автоматизация бизнес-процессов</h3>
-                <img src="./img/special_1.png" alt="special_1" class="special__img">
-            </div>
-        </div>
-    </section>
+		<section class="special__section service__section">
+			<div class="container">
+				<div class="row">
+					<div class="header__section">
+						<h2 class="title">Специальные <span>предложения</span></h2>
+					</div>
+					<p class="description">
+						Перечень всех наших услуг
+					</p>
+				</div>
+				<div class="row">
+					<a href="##" class="single__service">
+						<div class="content">
+							<h3 class="main__title">Обслуживание компьютерной техники</h3>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</a>
+					<a href="##" class="single__service">
+						<div class="content">
+							<h3 class="main__title">Обслуживание компьютерной техники</h3>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</a>
+					<a href="##" class="single__service">
+						<div class="content">
+							<h3 class="main__title">Обслуживание компьютерной техники</h3>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</a>
+					<a href="##" class="single__service">
+						<div class="content">
+							<h3 class="main__title">Обслуживание компьютерной техники</h3>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="activeform__section container">
+			<div class="box">
+				<form>
+					<h2>Получить бесплатный аудит</h2>
+					<div class="inputBox">
+						<input type="text" required="required">
+						<span>Имя</span>
+						<i></i>
+					</div>
+					<div class="inputBox">
+						<input type="tel" required="required">
+						<span>Телефон</span>
+						<i></i>
+					</div>
+					<input type="submit" value="Оставить заявку">
+				</form>
+			</div>
+			<div class="box_2">
+				<div class="cube">
+					<div class="top"></div>
+					<div>
+						<span style="--i:0"></span>
+						<span style="--i:1"></span>
+						<span style="--i:2"></span>
+						<span style="--i:3"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="service__section">
+			<div class="container">
+				<div class="row">
+					<div class="header__section">
+						<h2 class="title">Наши <span>услуги</span></h2>
+					</div>
+					<p class="description">
+						Перечень всех наших услуг
+					</p>
+				</div>
+				<div class="row">
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">Обслуживание компьютерной техники</h3>
+							<p class="description">
+								Предлагаем заключить договор на абонентское обслуживание компьютерной
+техники Вашей организации. Специалисты быстро и качественно помогут решать
+возникающие неполадки техники. 
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">Помощь выбора и настройка сервера</h3>
+							<p class="description">
+								Поможем Вам в подборе сервера, а также спроектируем серверную инфраструктуру
+под Ваши цели и задачи 
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">IP – телефония</h3>
+							<p class="description">
+								Организуем коммуникации Вашей организации, применив современные технологии
+связи. Поможем настроить маршруты и боты автоответчики.
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">Автоматизация бизнес-процессов</h3>
+							<p class="description">
+								Проведем аудит вашей организации и подскажем какое решение поможет
+автоматизировать процессы в вашей организации и расскажем, как это отразится на
+финансовой составляющей компании
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about_section">
+				<div class="header__section">
+					<h2 class="title">Информация о <span>компании</span></h2>
+				</div>
+				<p class="description">
+					Компания общество с ограниченной ответственностью «ИНФОРМАЦИОННОКОММУНИКАЦИОННЫЕ СИСТЕМЫ» («ИКС», «ICS») была основана в 2011 году.
+Основной вид деятельности компании заключается в оказании ИТ услуг коммерческим и
+бюджетным организациям, а также большую долю внимания компания направила в
+разработку облачных сервисов для бизнеса.
+				</p>
+				<p class="description">
+					Компания занимается консалтингом малых и средних предприятий по части
+цифровизации бизнес-процессов. 
+				</p>
+				<p class="description">
+					Миссия компании заключается в работе, направленной на стратегическое развитие
+клиентов, решении критически важных бизнес-задач средствами информационных
+технологий, поддержке передовых технологических проектов, которые открывают новые
+возможности для компаний и отраслей.
+				</p>
+		</section>
+
+		<section class="contacts container">
+			<div class="contacts__map-wrapper">
+				<iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae8856cb628f85a99525c39fd3a9f665f412b393a6dfaae628fc316c3c8255ad0&amp;source=constructor"></iframe>
+			</div>
+			<div class="contacts__info">
+				<p class="contacts__text">Адрес:</p>
+				<p class="contacts__text">г. Новосибирск ул. Советская 52, офис 318.</p>
+				<p class="contacts__text">Телефон:</p>
+				<p class="contacts__text">+7 (383) 200-34-46</p>
+			</div>
+		</section>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__logo logo">
-                <a href="##" class="logo__link">
+                <a href="./index.html" class="logo__link">
                     <img src="./img/logo.png" alt="logo" class="logo__img">
                 </a>
                 <div class="footer__tech">
@@ -74,21 +231,34 @@
             <p class="footer__text">2010-2022 ООО "ИКС". Все права защищены.</p>
         </div>
     </footer>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-body">
+						<form>
+							<div class="inputBox">
+								<input type="text" required="required">
+								<span>Имя</span>
+								<i></i>
+							</div>
+							<div class="inputBox">
+								<input type="tel" required="required">
+								<span>Телефон</span>
+								<i></i>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark">Оставить заявку</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="modal">
-        <div class="modal__dialog">
-            <div class="modal__close">
-                <span class="modal__line"></span>
-                <span class="modal__line"></span>
-            </div>
-            <div class="modal__body">
-                <div class="modal__form">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
+		<script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ICS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="./img/logo.png" alt="logo" class="logo__img">
+                    </a>
+                </div>
+                <div class="nav_list-wrap">
+									<ul class="nav_list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="./services.html" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">О компании</a></li>
+                    <li class="nav__item"><a href="./contacts.html" class="nav__link active">Контакты</a></li>
+                </ul>
+								</div>
+                <div class="header__call">
+                    <a href="tel:+73832003446" class="header__tel">+7 (383) 200-34-46</a>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+                </div>
+								<div class="header__burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+            </nav>
+        </div>
+    </header>
+    
+		<section class="contacts container">
+			<div class="contacts__map-wrapper">
+				<iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae8856cb628f85a99525c39fd3a9f665f412b393a6dfaae628fc316c3c8255ad0&amp;source=constructor"></iframe>
+			</div>
+			<div class="contacts__info">
+				<p class="contacts__text">Адрес:</p>
+				<p class="contacts__text">г. Новосибирск ул. Советская 52, офис 318.</p>
+				<p class="contacts__text">Телефон:</p>
+				<p class="contacts__text">+7 (383) 200-34-46</p>
+			</div>
+		</section>
+
+		<section class="contacts__empt"></section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo logo">
+                <a href="./index.html" class="logo__link">
+                    <img src="./img/logo.png" alt="logo" class="logo__img">
+                </a>
+                <div class="footer__tech">
+                    <p class="footer__tech_text">Отдел технической поддержки:</p>
+                    <a href="mailto:support@ics-invest.com" class="footer__tech_mail">support@ics-invest.com</a>
+                </div>
+            </div>
+            <p class="footer__text">2010-2022 ООО "ИКС". Все права защищены.</p>
+        </div>
+    </footer>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-body">
+						<form>
+							<div class="inputBox">
+								<input type="text" required="required">
+								<span>Имя</span>
+								<i></i>
+							</div>
+							<div class="inputBox">
+								<input type="tel" required="required">
+								<span>Телефон</span>
+								<i></i>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark">Оставить заявку</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ICS</title>
+</head>
+<body class="page-sevices">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="./img/logo.png" alt="logo" class="logo__img">
+                    </a>
+                </div>
+                <div class="nav_list-wrap">
+									<ul class="nav_list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="./services.html" class="nav__link active">Услуги</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">О компании</a></li>
+                    <li class="nav__item"><a href="./contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+								</div>
+                <div class="header__call">
+                    <a href="tel:+73832003446" class="header__tel">+7 (383) 200-34-46</a>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+                </div>
+								<div class="header__burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+            </nav>
+        </div>
+    </header>
+    
+		<section class="service__section">
+			<div class="container">
+				<div class="row">
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">Обслуживание компьютерной техники</h3>
+							<p class="description">
+								Предлагаем заключить договор на абонентское обслуживание компьютерной
+техники Вашей организации. Специалисты быстро и качественно помогут решать
+возникающие неполадки техники. 
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">Помощь выбора и настройка сервера</h3>
+							<p class="description">
+								Поможем Вам в подборе сервера, а также спроектируем серверную инфраструктуру
+под Ваши цели и задачи 
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">IP – телефония</h3>
+							<p class="description">
+								Организуем коммуникации Вашей организации, применив современные технологии
+связи. Поможем настроить маршруты и боты автоответчики.
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+					<div class="single__service">
+						<div class="content">
+							<h3 class="main__title">Автоматизация бизнес-процессов</h3>
+							<p class="description">
+								Проведем аудит вашей организации и подскажем какое решение поможет
+автоматизировать процессы в вашей организации и расскажем, как это отразится на
+финансовой составляющей компании
+							</p>
+							<a href="##" class="learn_more">Задать вопрос</a>
+						</div>
+						<span class="circle_before"></span>
+						<img src="./img/special_1.png" alt="special_1" class="service__img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services__empt"></section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo logo">
+                <a href="./index.html" class="logo__link">
+                    <img src="./img/logo.png" alt="logo" class="logo__img">
+                </a>
+                <div class="footer__tech">
+                    <p class="footer__tech_text">Отдел технической поддержки:</p>
+                    <a href="mailto:support@ics-invest.com" class="footer__tech_mail">support@ics-invest.com</a>
+                </div>
+            </div>
+            <p class="footer__text">2010-2022 ООО "ИКС". Все права защищены.</p>
+        </div>
+    </footer>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-body">
+						<form>
+							<div class="inputBox">
+								<input type="text" required="required">
+								<span>Имя</span>
+								<i></i>
+							</div>
+							<div class="inputBox">
+								<input type="tel" required="required">
+								<span>Телефон</span>
+								<i></i>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark">Оставить заявку</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
