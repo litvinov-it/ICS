@@ -1,4 +1,4 @@
 # ics: project in hakaton
 - jroject took first place
-html,css,js
-adaptive
+- html,css,js
+- adaptive
